@@ -1,0 +1,51 @@
+
+// Billede
+img {
+  width: 100vw;  // Skal laves om til 100%
+  max-height: 550px;
+  object-fit: cover;
+  column-span: all;
+}
+
+// main med padding så billedet fejler.
+main {
+  max-width: 1200px;
+  padding:40px;
+  margin: 100px auto;
+}
+
+
+// Artiklen 
+article {
+  column-count: 3;
+  column-width: 320px;
+  column-rule: 1px dotted #1a1c1a;
+  column-gap: 40px;
+}
+
+h1, lead & img : 
+column-span: all;
+
+
+// Variabler
+:root {
+  --font-size-xl: 12rem;
+  --font-size-600: 2.5rem;
+  --font-size-400: 1.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --font-size-xl: 8rem;
+    --font-size-600: 3rem;
+    --font-size-400: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  :root {
+    --font-size-xl: 4rem;
+    --font-size-600: 2rem;
+    --font-size-400: 1.8rem;
+  }
+}
